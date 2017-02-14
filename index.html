@@ -1,0 +1,139 @@
+<!doctype html>
+<title>A Simple Introduction to git</title>
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather|Roboto+Mono|Cinzel+Decorative:900" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+  font-feature-settings: "liga", "clig";
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: Consolas, Menlo, Roboto Mono, monospace;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a:focus {
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  font: 64px/72px 'Abril Fatface', cursive;
+}
+
+main {
+  font: 28px/32px Merriweather, Georgia, serif;
+}
+
+main h2 {
+  font: 900 56px/64px Cinzel Decorative, serif;
+}
+
+main > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main > div:nth-child(4n+0) {
+  background: #ffbf00;
+  color: black;
+}
+
+main > div:nth-child(4n+1) {
+  background: #530FAD;
+  color: white;
+}
+
+main > div:nth-child(4n+2) {
+  background: #FFE800;
+  color: black;
+}
+
+main > div:nth-child(4n+3) {
+  background: #1B1BB3;
+  color: white;
+}
+  </style>
+
+<header>
+  <h1>Introduction to <code>git</code></h1>
+</header>
+
+<main>
+  <div>
+    <h2>Installation</h2>
+    <p><a href="https://git-scm.com/downloads">Download</a></p>
+  </div>
+
+  <div>
+    <div class=wrapper>
+      <h2>Setup</h2>
+      <p>Let <code>git</code> (and the world!) know who you are:</p>
+      <ul>
+        <li><code>git config --global user.name 'John Smith'</code>
+        <li><code>git config --global user.email 'john@smith.me'</code>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <div class=wrapper>
+      <h2>Fundementals</h2>
+      <p><code>git</code> has three main states files can reside in:
+        committed, modified, and staged.</p>
+    </div>
+  </div>
+
+  <div>
+    <div class=wrapper>
+      <h2>Starting Points</h2>
+      <p>To start a new repository for the current directory, use:
+      <p><code>git init</code>
+      <p>If you've created a repository on GitHub that you want to use, use:
+      <p><code>git clone </code>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p><a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative
+  Commons Licence" style="border-width:0"
+  src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>This
+  work is licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+  Commons Attribution-ShareAlike 4.0 International License</a>.</p>
